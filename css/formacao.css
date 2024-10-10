@@ -1,0 +1,89 @@
+#formacao{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 80px;
+    margin-top: 0px;
+    flex-wrap: wrap;
+    background: #141414;
+    color: #ffffff;
+}
+
+#formacao h1{
+    font-size: 8rem;
+    color: black;
+}
+
+.asform{
+    margin-top: 40px;
+    font-size: 15px;
+    color: #e0e0e0;
+    position: relative;
+}
+
+.tecn{
+    background: black;
+    padding: 25px;
+}
+
+.asform::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 190px;
+    background: linear-gradient(#b6f829, #67dd0a);
+    left: 0px;
+    top: 0px;  
+}
+
+
+#formacao h2{
+    margin-bottom: 35px;
+}
+
+.cur-extra, .cur-extraidi{
+    grid-column: 2;
+    margin-top: 50px;
+    position: relative;
+    margin-left: 25px;
+}
+
+.cur-extra h4 {
+    margin-bottom: 15px;
+}
+
+.cur-extra h4::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url(/img/cursos.svg) no-repeat center;
+    left: -40px;
+    top: -15px;
+}
+
+.cur-extraidi h4::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url(/img/idiomas.svg) no-repeat center;
+    left: -40px;
+    top: -15px;
+}
+
+@media(max-width:600px){
+    #formacao{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:1000px){
+    .asform::before{
+        height: 190px ;
+    }
+}

@@ -1,0 +1,31 @@
+#contato{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 80px;
+    margin-top: 0px;
+    flex-wrap: wrap;
+    background: black;
+    color: #f7f7f7;
+    gap: 150px;
+}
+
+.disponivel{
+    font-size: 30px;
+}
+
+.meiosdcontato li{
+    padding: 20px;
+}
+
+.meiosdcontato{
+    font-size: 20px;
+}
+
+@media(max-width:600px){
+    #contato{
+        grid-template-columns: 1fr;
+        gap: 70px;
+    }
+}

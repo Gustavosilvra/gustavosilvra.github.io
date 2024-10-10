@@ -1,0 +1,47 @@
+#experiencia{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 80px;
+    margin-top: 70px;
+    flex-wrap: wrap;
+}
+
+#experiencia h1{
+    font-size: 8rem;
+    color: #e0e0e0;
+}
+.resume{
+    font-size: 20px;
+    margin-top: 30px;
+
+}
+#experiencia h2{
+    margin-top: 15px;
+}
+
+.trabs{
+    background: #e0e0e0;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.asexp::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 40px;
+    background: linear-gradient(#b6f829, #67dd0a);
+}
+
+@media(max-width:600px){
+    #experiencia{
+        grid-template-columns: 1fr;
+        margin-top: 10px;
+    }
+    #experiencia h1{
+        color: black;
+    }
+}
